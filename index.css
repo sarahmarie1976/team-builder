@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Oswald:wght@200&display=swap');
+
+html,
+body,
+.App,
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: 'Oswald';
+  text-align: center;
+  background: url('https://i.postimg.cc/ryCg5z41/lambda-logo.png') ;
+  background-color: slategray;
+  background-repeat: no-repeat;
+  padding: 32px;
+  letter-spacing: 2px
+}
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.note {
+  background: whitesmoke;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 16px auto;
+  text-align: center;
+}
+
+h1,
+h2, p {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+input, textarea, select {
+  width: 300px;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;  
+  border: 1px solid maroon;
+  border-radius: 4px;
+}
+
+
+button {
+  background: maroon;
+  background-image: linear-gradient(-315deg, maroon 40%, black 100%);
+  border: 1px solid maroon;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: whitesmoke;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12), 0 2px 2px 1px rgba(0, 0, 0, 0.24);
+  transition: all 0.2 ease-in;
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12), 0 2px 3px 2px rgba(0, 0, 0, 0.24);
+  background: maroon;
+  background-image: linear-gradient(-315deg, black 40%, maroon 100%);
+}
+button:active {
+  background:black;
+          box-shadow: inset 0px 0px 5px black;
+   outline: none;
+}
+
+label {
+  margin-bottom: -12px;
+  text-align: left;
+  width: 250px;
+  font-weight: bold;
+}
